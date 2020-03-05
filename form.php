@@ -16,23 +16,25 @@
             
             <div id="inputs">
 
-                <input type="email" name="email" id="emailaddres" class="form-shit" placeholder="email addres">
- 
-                <input type="text" name="text" id="subject" class="form-shit" placeholder="subject">
-      
-                <textarea id="mailtext" class="form-shit" placeholder="text" name="text" rows="14" cols="10" wrap="soft"></textarea>
+                <input type="text" name="email" id="email" class="form-shit" placeholder="email addres">
                 
             </div>
 
             <div >
-                <input name="send" type="submit" value="send!" onclick="mail($emailaddres, $subject, $mailtext, $headers)">
+                <input id="send" name="send" type="submit" value="send!">
             </div>
+
         </form>
 
         <?php
-
-            
+                    if (filter_var($_GET["email"], FILTER_VALIDATE_EMAIL)) {
+                        echo "<h1> Email is valid</h1>";
+                    } 
+                    else {
+                        echo"<h1> Email is not valid</h1>";
+                    }
         ?>
+
     </main>
     
     <footer></footer>

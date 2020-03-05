@@ -5,39 +5,26 @@
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 10px;
 }
 
 form {
     display: flex;
     flex-direction: row;
-    margin: 10px;
-
-}
-
-#inputs {
-    display: flex;
-    flex-direction: column;
+    
 }
 
 .form-shit{
     border: 1px solid black;
     margin: 2px;
     width: 550px;
+    height: 38px;
     padding-left: 4px;
+    margin-bottom: 10px;
 }
 
-#mailtext{
-    height: 180px;
-    resize: none;
-
-}
-::placeholder {
-    display: flex;
-    align-self: top;
-}
-
-#sent {
+#send {
     margin-top: 2px;
     width: 75px;
     height: 40px;
