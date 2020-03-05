@@ -1,0 +1,45 @@
+* {
+    padding : 0%;
+    margin: 0%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-shit{
+    border: 1px solid black;
+    margin: 2px;
+    width: 550px;
+    padding-left: 4px;
+}
+
+#mailtext{
+    height: 180px;
+    resize: none;
+
+}
+::placeholder {
+    display: flex;
+    align-self: top;
+}
+
+#sent {
+    margin-top: 2px;
+    width: 75px;
+    height: 40px;
+    border: 1px solid black;
+}
